@@ -1,10 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 import sideBarreducer from "./sideBarSlice"
 import videosreducer from "./videoSlice"
+import searchreducer from "./searchSlice"
+
 
 export const aapStore = configureStore({
   reducer: {
     sideBar: sideBarreducer,
-    videos : videosreducer
+    videos : videosreducer,
+    search : searchreducer
   },
 })

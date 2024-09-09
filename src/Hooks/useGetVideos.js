@@ -19,13 +19,6 @@ const useGetVideos = () => {
     dispatch(addVideos(json.items))
   }
 
-  // const getSearchData = async () => {
-
-  //   const data = await fetch("http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=namaste");
-  //   const json = await data.json();
-  //   console.log(json)
-  // }
-
 
 }
 
