@@ -3,8 +3,6 @@ import React from "react";
 
 const VideoCard = ({video}) => {
 
-    console.log(video);
-
     if (!video) return <p>Loading..</p>;
 
   return ( 
