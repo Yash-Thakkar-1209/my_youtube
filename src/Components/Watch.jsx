@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { closeSideBar } from "../utils/sideBarSlice";
 import { useSearchParams } from "react-router-dom";
+import CommentContainer from "./CommentContainer";
 
 const Watch = () => {
   const dispatch = useDispatch();
@@ -17,7 +18,8 @@ const Watch = () => {
 
   return (
     <div>
-      <iframe
+    <div>
+    <iframe
         width="900"
         height="500"
         src={"https://www.youtube.com/embed/" + searchParams.get("v") }
@@ -27,6 +29,8 @@ const Watch = () => {
         referrerPolicy="strict-origin-when-cross-origin"
         allowFullScreen
       ></iframe>
+    </div>
+    <CommentContainer />
     </div>
   );
 };

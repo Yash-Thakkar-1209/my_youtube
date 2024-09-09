@@ -10,7 +10,11 @@ export const searchSlice = createSlice({
    
     addToCache: (state, action) => {
       // Merge Two Objects
-        state = Object.assign(state, action.payload)
+        // state = Object.assign(state, action.payload);
+
+        // OR
+
+          return { ...state, ...action.payload }; // Return a new object
     }
   },
 })
