@@ -8,7 +8,7 @@ const CommentList = ({ comments }) => {
   }
 
   return comments.map((comment, index) => (
-    <div>
+    <div className="m-5">
       <Comment key={index} data={comment} />
       <div className="pl-5 border border-l-black">
         {/* Recursion */}

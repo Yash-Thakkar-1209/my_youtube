@@ -82,7 +82,7 @@ const CommentContainer = () => {
         }
     ]
   return (
-    <div>
+    <div className='m-5'>
         <CommentList comments = {commentData}/>
     </div>
   )
